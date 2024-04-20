@@ -1,0 +1,10 @@
+<div class="weatherCard">
+  <h2>{{ weather.city }}</h2>
+  <div class="weatherCard__txt">
+    <p>Current conditions: {{ weather.main }}</p>
+    <p>Temperature: {{ weather.temp }}°</p>
+    <p>Max today: {{ weather.minTemp }}° - Min today: {{ weather.maxTemp }}°</p>
+  </div>
+  <img src="/assets/images/{{ weather.icon }}.png" alt="{{ weather.main }}" />
+  <span class='weatherCard__close' (click)="removeLocation(weather.city)">X</span>
+</div>
